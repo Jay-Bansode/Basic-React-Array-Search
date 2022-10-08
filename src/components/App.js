@@ -28,11 +28,10 @@ const App = () => {
     } else {
       setShowResult(false);
     }
-    searchWords = searchWords.toLocaleLowerCase;
   };
-  const showData = searchArray.map((item) => {
+  const showData = searchArray.map((item, index) => {
     if (item.toLowerCase().includes(searchWords.toLowerCase())) {
-      return <li>{showResult && item}</li>;
+      return <li key={index}>{showResult && item}</li>;
     }
   });
 
