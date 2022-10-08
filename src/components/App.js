@@ -42,7 +42,7 @@ const App = () => {
       <br />
       <input id="search-input" type="text" onChange={searchHandler} />
       <p>Result</p>
-      <ul>{showResult && showData}</ul>
+      <ul id="results-holder">{showResult && showData}</ul>
     </div>
   );
 };
